@@ -6,6 +6,7 @@ En este ejercicio aplicaremos conceptos clave de Ingeniería Informática median
 
 El alumno deberá diseñar clases que representen procesos, un scheduler que implemente distintos algoritmos (por ejemplo, FCFS, Round-Robin) y un repositorio que mantenga el conjunto de procesos, además de serializar la información en disco.
 
+## Link de repositorio: https://github.com/Victor220311/Examen-Sorpresa-Practica.git
 ---
 
 ## 🎯 Objetivos de Evaluación
