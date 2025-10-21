@@ -1,0 +1,26 @@
+[
+    {
+        "pid": "P1",
+        "duracion": 10,
+        "prioridad": 1,
+        "tiempo_llegada": 0
+    },
+    {
+        "pid": "P2",
+        "duracion": 5,
+        "prioridad": 2,
+        "tiempo_llegada": 0
+    },
+    {
+        "pid": "P3",
+        "duracion": 8,
+        "prioridad": 1,
+        "tiempo_llegada": 0
+    },
+    {
+        "pid": "P4",
+        "duracion": 3,
+        "prioridad": 3,
+        "tiempo_llegada": 0
+    }
+]
