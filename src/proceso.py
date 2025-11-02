@@ -31,7 +31,7 @@ class Proceso:
         Raises:
             ValueError: Si el PID está vacío o la duración no es positiva
         """
-        if not pid or not isinstance(pid, str) or pid.strip() == "":
+        if not pid or not isinstance(pid, str) or pid.strip() == "": #Si pid es un str o no hay nada
             raise ValueError("El PID no puede estar vacío")
         
         if not isinstance(duracion, int) or duracion <= 0:
@@ -81,7 +81,7 @@ class Proceso:
             'tiempo_llegada': self.tiempo_llegada
         }
     
-    @classmethod
+    @classmethod #Crear un proceso a partir de un diccionario (csv, json)
     def from_dict(cls, data: dict):
         """
         Crea un proceso a partir de un diccionario.
