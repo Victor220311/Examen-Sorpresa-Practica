@@ -44,14 +44,14 @@ class SistemaPlanificacion:
         """Solicita datos al usuario y agrega un nuevo proceso."""
         print("\n--- AGREGAR PROCESO ---")
         try:
-            pid = input("Ingrese el PID del proceso: ").strip()
+            pid = input("Ingrese el PID del proceso: ").strip() #Quitar espacios en blanco
             duracion = int(input("Ingrese la duración (tiempo de CPU): "))
             prioridad = int(input("Ingrese la prioridad (menor = más urgente): "))
             tiempo_llegada = int(input("Ingrese el tiempo de llegada (por defecto 0): ") or "0")
             
             proceso = Proceso(pid, duracion, prioridad, tiempo_llegada)
             
-            if self.repositorio.agregar_proceso(proceso):
+            if self.repositorio.agregar_proceso(proceso): #Verificar si el pid esta agregado
                 print(f"✓ Proceso '{pid}' agregado exitosamente.")
             else:
                 print(f"✗ Error: Ya existe un proceso con PID '{pid}'.")
